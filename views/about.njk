@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>{{ about.title }}</title>
+{% endblock %}
+
+{% block content %}
+  
+<div id="wrapper">
+  <img src="{{ about.image_url }}" alt="Imagem de {{ about.title }}">
+  <h1>{{ about.title }}</h1>
+  <p>{{ about.description }}</p>
+</div>
+
+<div class="links">
+  <a id="links-out" href="{{ about.link.url }}" target="_blank">{{ about.link.name }}</a>
+</div>
+
+{% endblock %}
